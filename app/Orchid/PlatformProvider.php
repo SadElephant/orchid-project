@@ -34,6 +34,13 @@ class PlatformProvider extends OrchidServiceProvider
                 ->title('Navigation')
                 ->badge(fn () => 6),
 
+            Menu::make('Products')
+                ->route('platform.products'),
+
+            Menu::make('Products-new')
+                ->route('platform.products-new'),
+
+
             Menu::make('Tasks')
                 ->icon('bag')
                 ->route('platform.task')
